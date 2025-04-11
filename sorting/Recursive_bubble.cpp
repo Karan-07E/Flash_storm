@@ -5,7 +5,7 @@ void bubble(int arr[], int n){
     if(n == 1){
         return;
     }
-    for(int i=0; i<=n-2; i++){
+    for(int i=0; i<=n-2; i++){  
         if(arr[i] > arr[i+1]){
             int temp = arr[i];
             arr[i] = arr[i+1];
@@ -15,7 +15,7 @@ void bubble(int arr[], int n){
     bubble(arr, n-1);
 }
 int main(){
-    int n;
+    int n; 
     cin >> n;
     int arr[n];
     for(int i=0; i<n; i++){
