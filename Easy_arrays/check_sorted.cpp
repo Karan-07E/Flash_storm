@@ -12,6 +12,14 @@ bool checksort(int arr[], int n){ //brute force
     }
     return true;
 }
+bool optimal(int arr[], int n){
+    for(int i=1; i<n; i++){
+        if(arr[i] < arr[i-1]){
+            return false;
+        }
+    }
+    return true;
+}
 int main(){
     int arr1[] = {1,2,3,4,5};
     int arr2[] = {5,4,6,7,8};
@@ -22,6 +30,14 @@ int main(){
     cout << endl;
     bool ans2 = checksort(arr2, n);
     if(ans2) cout << "true";
+    else cout << "false";
+
+    bool res1 = optimal(arr1, n); //oprtimal output
+    bool res2 = optimal(arr2, n);
+    if(res1) cout << "true";
+    else cout << "false";
+    cout << endl;
+    if(res2) cout << "true";
     else cout << "false";
     return 0;
 }
