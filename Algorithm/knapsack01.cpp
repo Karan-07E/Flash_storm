@@ -60,3 +60,20 @@ int main() {
 
     return 0;
 }
+
+// i/p and o/p
+// Enter the number of items:
+// 4
+// Enter the capacity of the knapsack:
+// 7
+
+// Enter weights:
+// 1 3 4 5
+
+// Enter profits:
+// 1 4 5 7
+
+// Profit: 9
+// Items to be added for Optimal Solution:
+// Item : 3
+// Item : 2

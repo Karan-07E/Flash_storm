@@ -54,3 +54,20 @@ int main() {
 
     return 0;
 }
+
+// i/p and o/p
+// Enter the number of vertices (V):
+//  4
+
+// Enter the cost matrix of size V x V
+// 0 2 0 6
+// 2 0 3 8
+// 0 3 0 0
+// 6 8 0 0
+
+//Edge : Weight
+// 0 - 1 : 2
+// 1 - 2 : 3
+// 0 - 3 : 6
+// Cost of Tree: 11
+
