@@ -3,8 +3,8 @@
 #include <map>
 
 using namespace std;
-int longestsubsum(vector<int> arr, int k){
-    int left = 0, right = 0;
+int longestsubsum(vector<int> arr, int k){          //for both positives and negatives.
+    int left = 0, right = 0;            
     int len = 0;
     int sum = arr[0];
     int n = arr.size();
@@ -23,7 +23,7 @@ int longestsubsum(vector<int> arr, int k){
     }
     return len;
 }
-// int longestsubsum(vector<int> arr, int n, int k){
+// int longestsubsum(vector<int> arr, int n, int k){            //only for positives 
 //     map<long long, int> prefixmap;
 //     int maxlen = 0;
 //     long long sum = 0;
