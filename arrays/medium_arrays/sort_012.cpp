@@ -5,19 +5,19 @@ using namespace std;
 
 void sorts(vector<int> &arr){
     int n = arr.size();
-    int left = 0, right = n - 1, pivot = 0;
-    while(pivot <= right){
-        if( arr[pivot] == 0){       //if 0 both pivot and left swap and both increment
-            swap(arr[pivot], arr[left]);
+    int left = 0, high = n-1, mid = 0;
+    while(mid <= high){
+        if(arr[mid] == 0){
+            swap(arr[left], arr[mid]);
+            mid++;
             left++;
-            pivot++;
         }
-        else if(arr[pivot] == 1){
-            pivot++;                    //if 1 only pivot is incremented
+        else if(arr[mid] == 1){
+            mid++;
         }
-        else {
-            swap(arr[pivot], arr[right]);
-            right--;           //if 2 both pivot and right swap and right is decremented
+        else{
+            swap(arr[mid], arr[high]);
+            high--;
         }
     }
 }
